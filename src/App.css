@@ -1,0 +1,52 @@
+/* Global Styles */
+
+@font-face {
+  font-family: "Polymath";
+  src: url("./assets/POLYMATHVAR.TTF");
+}
+@font-face {
+  font-family: "Futura";
+  src: url("./assets/Futura\ Std\ Medium.ttf");
+}
+@font-face {
+  font-family: "Graphik Regular";
+  src: url("./assets/Graphik-Regular-Cy-Gr-Web.ttf");
+}
+@font-face {
+  font-family: "Graphik Light";
+  src: url("./assets/Graphik-Light-Cy-Gr-Web.ttf");
+}
+*  {
+  padding: 0;
+  margin: 0;
+}
+html, body  {
+  font-family: "Polymath";
+  color: #E2DDD6;
+  background-color: #141115;
+  min-height: 100vh !important;
+  height: 100%;
+}
+:root  {
+  --text-color: #E2DDD6;
+  --background: #141115;
+}
+#root, .App  {
+  height: 100%;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(226, 221, 214, 0.5);
+}
