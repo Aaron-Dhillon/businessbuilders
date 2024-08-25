@@ -6,7 +6,7 @@ import Educate from "../assets/Educate.svg";
 import Inspire from "../assets/Inspire.svg";
 import {Link} from 'react-router-dom';
 
-function AboutUs() {
+function Leadership() {
   return (
     <div className={styles.scrollContainer}>
       <div className={styles.header}>
@@ -26,26 +26,31 @@ function AboutUs() {
       <div className={styles.scrollSubcontainer}>
         <div></div>
         <div className={styles.landingSubcontainer}>
-          <span className={styles.landingTitle}>About&nbsp;&nbsp;Us!<br/></span>
+          <span className={styles.landingYear}>2024-25</span>
+          <span className={styles.landingTitle}>Meet the Team<br/></span>
         </div>
         <span className={`material-symbols-rounded ${styles.landingIcon}`}>arrow_downward_alt</span>
       </div>
 
       <div className={styles.scrollSubcontainer}>
         <div className={styles.missionSubContainer}>
-          <span className={styles.missionTitle}>Our Past Events</span>
+          <span className={styles.missionTitle}>Our Mission</span>
           <div className={styles.missionItemsContainer}>
             <div className={styles.missionItemContainer}>
-            <span className={styles.landingTitle}>Speaker EVENT<br/></span>
-              <span className={styles.missionItemDescription}>Alexis Ohanian: Reddit Co-founder + tech entrepreneur Shereen Agrawal: Director of Center of Software Innovation Jeff Schumann: CEO of Aware </span>
+              <span className={styles.landingTitle}>Rohan Suggala<br/></span>
+              <span className={styles.missionItemDescription}>President</span>
             </div>
             <div className={styles.missionItemContainer}>
-            <span className={styles.landingTitle}>IDEA<br/>Pitch<br/></span>
-              <span className={styles.missionItemDescription}>Startup idea pitch compeition with a panel of 6-7 judges from successful local startups. Top idea got 1K in funding.</span>
+            <span className={styles.landingTitle}>Trevor Gerald<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Technology.</span>
             </div>
             <div className={styles.missionItemContainer}>
-            <span className={styles.landingTitle}>Corporate Tours<br/></span>
-              <span className={styles.missionItemDescription}>Visited corporate offices of companies such as Google, Lyft, Microsoft, Flashpoint Innovation, Societe Generale in cities such as San Francisco and Chicago.</span>
+            <span className={styles.landingTitle}>Pratham Kancherla<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Membership and Socials</span>
+            </div>
+            <div className={styles.missionItemContainer}>
+            <span className={styles.landingTitle}>Henry Guerrera<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Finance</span>
             </div>
           </div>
         </div>
@@ -81,6 +86,8 @@ function AboutUs() {
           <span className="landing-text">Business Builders</span>
           <span className="landing-text">Business Builders</span>
           <span className="landing-text">Business Builders</span>
+        </div>
+        <div className="marquee-sub-contain">
           <span className="landing-text">Business Builders</span>
           <span className="landing-text">Business Builders</span>
           <span className="landing-text">Business Builders</span>
@@ -95,4 +102,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Leadership;
