@@ -34,7 +34,7 @@ function Leadership() {
 
       <div className={styles.scrollSubcontainer}>
         <div className={styles.missionSubContainer}>
-          <span className={styles.missionTitle}>Our Mission</span>
+          <span className={styles.missionTitle}>Our Leadership</span>
           <div className={styles.missionItemsContainer}>
             <div className={styles.missionItemContainer}>
               <span className={styles.landingTitle}>Rohan Suggala<br/></span>
@@ -42,11 +42,31 @@ function Leadership() {
             </div>
             <div className={styles.missionItemContainer}>
             <span className={styles.landingTitle}>Trevor Gerald<br/></span>
-              <span className={styles.missionItemDescription}>Vice President of Technology.</span>
+              <span className={styles.missionItemDescription}>Vice President of Operations</span>
             </div>
             <div className={styles.missionItemContainer}>
             <span className={styles.landingTitle}>Pratham Kancherla<br/></span>
-              <span className={styles.missionItemDescription}>Vice President of Membership and Socials</span>
+              <span className={styles.missionItemDescription}>Vice President of Technology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.scrollSubcontainer}>
+        <div className={styles.missionSubContainer}>
+          <span className={styles.missionTitle}>Our Leadership</span>
+          <div className={styles.missionItemsContainer}>
+            <div className={styles.missionItemContainer}>
+              <span className={styles.landingTitle}>Henry Guerrera<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Finance</span>
+            </div>
+            <div className={styles.missionItemContainer}>
+            <span className={styles.landingTitle}>Kathir Maarikarthykeyan<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Marketing</span>
+            </div>
+            <div className={styles.missionItemContainer}>
+            <span className={styles.landingTitle}>Jen Hazlett<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Socials</span>
             </div>
           </div>
         </div>
