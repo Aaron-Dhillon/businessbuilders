@@ -48,10 +48,6 @@ function Leadership() {
             <span className={styles.landingTitle}>Pratham Kancherla<br/></span>
               <span className={styles.missionItemDescription}>Vice President of Membership and Socials</span>
             </div>
-            <div className={styles.missionItemContainer}>
-            <span className={styles.landingTitle}>Henry Guerrera<br/></span>
-              <span className={styles.missionItemDescription}>Vice President of Finance</span>
-            </div>
           </div>
         </div>
       </div>
