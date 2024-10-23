@@ -78,6 +78,14 @@
     background-color: var(--text-color);
     color: var(--background);
 }
+.missionTitle2{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 5px 10px;
+    background-color: var(--text-color);
+    color: var(--background);
+}
 .landingTitle  {
     font-weight: 900;
     text-transform: uppercase;
@@ -128,7 +136,52 @@
     text-align: center;
     font-family: "Graphik Regular";
 }
-
+.subtext {
+    margin-left: 150px;
+    margin-top: 25px;
+    font-size: 20px;
+    margin-right: 150px;
+    text-align: center;
+}
+.horizontalLine {
+    border: 0;
+    margin-top: 20px;
+    border-top: 5px dotted;
+    width: 50%;
+}
+.imageContainer {
+    display: inline-block;
+    margin-top: 10px;
+    gap: 5000px;
+    justify-content: left;
+  }
+.container {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+  }
+  
+  .hover-button {
+    display: inline-block; /* Make anchor behave like a block */
+    background-color: #4CAF50; /* Green background */
+    color: white;          /* White text */
+    padding: 15px 32px;    /* Padding for the button */
+    border: none;          /* Remove border */
+    font-size: 16px;       /* Font size */
+    text-align: center;    /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;    /* Optional: rounded corners */
+    cursor: pointer;       /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .hover-button:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
+  
+  
 
 /* Animations */
 @keyframes jiggle-icon {

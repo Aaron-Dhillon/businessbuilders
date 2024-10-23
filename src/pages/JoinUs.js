@@ -9,9 +9,12 @@ import {Link} from 'react-router-dom';
 function JoinUs() {
   return (
     <div className={styles.scrollContainer}>
-      <div className={styles.header}>
+    <div className={styles.header}>
+      <Link to= "/">
         <img src={Logo} className={styles.headerLogo} alt="Business Builders Logo"></img>
+      </Link>
         <div className={styles.headerLinkContainer}>
+          <Link className={styles.headerLink} to="/">Home</Link>
           <Link className={styles.headerLink} to="/aboutus">About Us</Link>
           <Link className={styles.headerLink} to="/leadership">Leadership</Link>
           <Link className={styles.headerLink} to="/appform">Join Us</Link>

@@ -5,9 +5,15 @@ import Logo from "../assets/Business Builders Logo.png";
 import Connect from "../assets/Connect.svg";
 import Educate from "../assets/Educate.svg";
 import Inspire from "../assets/Inspire.svg";
+import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleClick = () => {
+    navigate('/aboutus'); // Navigate to About Us page on click
+  };
   return (
     <div className={styles.scrollContainer}>
       <div className={styles.header}>
@@ -15,6 +21,7 @@ function Home() {
           <img src={Logo} className={styles.headerLogo} alt="Business Builders Logo"></img>
         </Link>
         <div className={styles.headerLinkContainer}>
+          <Link className={styles.headerLink} to="/">Home</Link>
           <Link className={styles.headerLink} to="/aboutus">About Us</Link>
           <Link className={styles.headerLink} to="/leadership">Leadership</Link>
           <Link className={styles.headerLink} to="/appform">Join Us</Link>
@@ -30,26 +37,17 @@ function Home() {
           <span className={styles.landingYear}>Est. 2001</span>
           <span className={styles.landingTitle}>Business<br/>Builders</span>
           <span className={styles.landingSubtitle}>The premier entrepreneurship organization at The Ohio State University</span>
-        </div>
+          <div className="container">
+            <button to="/aboutus" className="hover-button" onClick={handleClick}>More About Us</button>
+          </div>        
+          </div>
         <span className={`material-symbols-rounded ${styles.landingIcon}`}>arrow_downward_alt</span>
       </div>
 
       <div className={styles.scrollSubcontainer}>
         <div className={styles.missionSubContainer}>
-          <span className={styles.missionTitle}>Our Mission</span>
           <div className={styles.missionItemsContainer}>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Connect} alt="Business Builders - Connect Pillar"></img>
-              <span className={styles.missionItemDescription}>Build a community of innovators, problem-solvers, and doers with relationships that will last a lifetime.</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Educate} alt="Business Builders - Educate Pillar"></img>
-              <span className={styles.missionItemDescription}>Provide members with the knowledge required to build a sustainable business, think creatively, and achieve career goals.</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Inspire} alt="Business Builders - Inspire Pillar"></img>
-              <span className={styles.missionItemDescription}>Inspire students to explore and realize new career heights and life possibilities that are within their reach.</span>
-            </div>
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%23ffffff&src=YmJjLm9zdUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%237986CB" style= {{border: 'solid 1px #777'}} width="800" height="600" frameborder="0" scrolling="no" title = "myFrame">Google Calendar</iframe>
           </div>
         </div>
       </div>
