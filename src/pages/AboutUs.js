@@ -19,8 +19,7 @@ function AboutUs() {
           <img src={Logo} className={styles.headerLogo} alt="Business Builders Logo"></img>
         </Link>
         <div className={styles.headerLinkContainer}>
-        <Link className={styles.headerLink} to="/">Home</Link>
-          <Link className={styles.headerLink} to="/aboutus">About Us</Link>
+        <Link className={styles.headerLink} to="/">Home</Link><Link className={styles.headerLink} to="/aboutus">About Us</Link>
           <Link className={styles.headerLink} to="/leadership">Leadership</Link>
           <Link className={styles.headerLink} to="/appform">Join Us</Link>
         </div>
@@ -32,7 +31,8 @@ function AboutUs() {
       <div className={styles.scrollSubcontainer}>
         <div></div>
         <div className={styles.landingSubcontainer}>
-          <span className={styles.landingTitle}>About&nbsp;&nbsp;Us!<br/></span>
+          <span className={styles.landingYear}>Business Builders</span>
+          <span className={styles.landingTitle}>About&nbsp;&nbsp;Us<br/></span>
         </div>
         <span className={`material-symbols-rounded ${styles.landingIcon}`}>arrow_downward_alt</span>
       </div>
