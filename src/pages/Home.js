@@ -2,6 +2,9 @@ import "../App.css";
 import "../AppForm.css";
 import styles from "../assets/styles/Home.module.css";
 import Logo from "../assets/Business Builders Logo.png";
+import Instagram from "../assets/instagram-logo.png";
+import LinkedIn from "../assets/linkedin-logo.png";
+import GMail from "../assets/gmail-logo.png";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -51,21 +54,21 @@ function Home() {
               style={{ border: 'solid 1px #777' }}
               width="800"
               height="600"
-              frameBorder="0"
-              scrolling="no"
               title="Google Calendar"
             />
           </div>
         </div>
-      </div>
-
-      <div className="marquee-contain">
-        <div className="marquee-sub-contain">
-          {/* Landing Text Animation */}
-          {Array(16).fill("Business Builders").map((text, index) => (
-            <span key={index} className="landing-text">{text}</span>
-          ))}
-        </div>
+        <footer>
+          <p>&copy; 2024 Business Builders</p>
+          <p>
+            <a href="https://www.instagram.com/businessbuildersosu/" target="_blank">
+              <img src={Instagram} width = "25px" margin-top = "10px" alt="Instagram"/></a>
+            <a href="https://www.linkedin.com/company/business-builders-club/" target="_blank">
+              <img src={LinkedIn} width = "25px" margin-top = "10px" alt="LinkedIn"/></a>
+            <a href="mailto:bbc-osu@gmail.com" target="_blank">
+              <img src={GMail} width = "25px" margin-top = "10px" alt="GMail"/></a>
+            </p>
+        </footer>
       </div>
     </div>
   );

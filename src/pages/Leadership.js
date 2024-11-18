@@ -21,6 +21,7 @@ function Leadership() {
           <Link className={styles.headerLink} to="/aboutus">About Us</Link>
           <Link className={styles.headerLink} to="/leadership">Leadership</Link>
           <Link className={styles.headerLink} to="/appform">Join Us</Link>
+          <Link className={styles.headerLink} to="/payment">Payment</Link>
         </div>
         <a className={styles.headerIconLink} href="/">
           <span class={`material-symbols-rounded ${styles.headerIcon}`}>hub</span>

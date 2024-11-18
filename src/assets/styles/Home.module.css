@@ -163,7 +163,7 @@
     align-items: center;     /* Center vertically */
   }
   
-  .hover-button {
+.hover-button {
     display: inline-block; /* Make anchor behave like a block */
     background-color: #4CAF50; /* Green background */
     color: white;          /* White text */
@@ -177,10 +177,213 @@
     transition: background-color 0.3s ease; /* Smooth transition */
   }
   
-  .hover-button:hover {
+.hover-button:hover {
+    background-color: #45a049; /* Change color on hover */
+  }
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh; /* Adjusted from min-height for consistent layout inside scrollSubcontainer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content vertically */
+    box-sizing: border-box;
+}
+
+/* Title Styling */
+.container h2 {
+    color: #fff;
+    font-size: 32px;
+    margin: 10 0 50px; /* Replaced padding for more precise spacing */
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Pricing Row */
+.priceRow {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto; /* Center-aligns the grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px; /* Replaced grid-gap for modern syntax */
+}
+
+/* Individual Price Column */
+.priceCol{
+    width: 250px;  /* Fixed width */
+    padding: 20px;
+    background: #1f283b;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    height: auto;  /* Height will adjust based on content */
+}
+
+.priceCol:hover {
+    transform: translateY(-10px); /* Interactive hover effect */
+}
+
+/* Price Column Text */
+.priceCol p {
+    font-size: 22px;
+}
+
+.priceCol h3 {
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.priceCol h3 span {
+    font-size: 16px;
+}
+
+/* Features List */
+.priceCol ul {
+    text-align: left;
+    margin: 20px;
+    color: #ddd;
+    list-style: none;
+}
+
+.priceCol ul li {
+    margin: 15px 0;
+}
+
+.priceCol ul li.positive::before {
+    content: "✔"; /* Unicode for checkmark */
+    color: green; /* Green color for checkmark */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.priceCol ul li.negative::before {
+    content: "✘"; /* Unicode for X */
+    color: red; /* Red color for X */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+  
+/* For the Payment Form Container */
+.paymentDetailsContainer {
+    width: 100%;
+    max-width: 600px; /* Adjust the max width for the container */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Container that ensures the form is centered on the page */
+.scrollSubcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Horizontally center */
+    justify-content: center;  /* Vertically center */
+    height: 100vh;  /* Full viewport height */
+    padding: 20px;
+  }
+  
+.missionTitle {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 5px 10px;
+    background-color: var(--text-color);
+    color: var(--background);
+    margin-bottom: 30px;
+  }
+  
+.paymentFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 500px; /* Form width */
+    box-sizing: border-box;
+  }
+  
+.cardElementContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the Button */
+.hoverButton {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.hoverButton:hover {
     background-color: #45a049; /* Change color on hover */
   }
   
+  button:disabled {
+    background-color: #bbb;
+  }
+  
+  /* Error & Success Messages */
+.error, .success {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #d32f2f; /* red for error */
+    font-weight: 600;
+  }
+  
+.success {
+    color: #388e3c; /* green for success */
+  }
+
+  
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling for footer links */
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
   
 
 /* Animations */
