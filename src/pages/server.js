@@ -25,8 +25,8 @@ app.post("/create-checkout-session", async (req, res) => {
         },
       ],
       mode: "payment",
-      success_url: "https://google.com",
-      cancel_url: "https://google.com"
+      success_url: "https://bbcosu.org/success",
+      cancel_url: "https://bbcosu.org/cancel"
 
     });
 
