@@ -94,6 +94,14 @@
     padding: 0px;
     text-align: center;
 }
+
+.profileName  {
+    font-weight: 900;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
 .landingSubtitle  {
     font-weight: 600;
     font-size: 25px;

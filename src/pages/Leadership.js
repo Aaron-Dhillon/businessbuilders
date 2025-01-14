@@ -1,12 +1,15 @@
 import "../App.css";
 import styles from "../assets/styles/Home.module.css";
 import Logo from "../assets/Business Builders Logo.png";
-import Rohan from "../assets/rsuggala.png";
-import Trevor from "../assets/tgerald.png";
-import Kathir from "../assets/kmaari.png";
-import Andrew from "../assets/ashaheen.jpg";
+import Rohan from "../assets/rsuggala.JPEG";
+import Trevor from "../assets/tgerald.JPEG";
+import Andrew from "../assets/ashaheen.JPEG";
 import Jen from "../assets/jhazlett.jpg";
-import Pratham from "../assets/pratham.kancherla_headshot.png";
+import Pratham from "../assets/pkancherla.JPEG";
+import Ava from "../assets/ava.JPEG";
+import Aryan from "../assets/abommena.JPEG";
+import Andrea from "../assets/andrea.JPEG";
+import Alex from "../assets/amcnichols.jpg";
 import {Link} from 'react-router-dom';
 
 function Leadership() {
@@ -42,18 +45,18 @@ function Leadership() {
           <span className={styles.missionTitle}>Our Leadership</span>
           <div className={styles.missionItemsContainer}>
             <div className={styles.missionItemContainer}>
-            <img src={Rohan} alt="Profile" style={{borderRadius: "50%" }} />
-              <span className={styles.landingTitle}>Rohan Suggala<br/></span>
+            <img src={Rohan} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+              <span className={styles.profileName}>Rohan Suggala<br/></span>
               <span className={styles.missionItemDescription}>President</span>
             </div>
             <div className={styles.missionItemContainer}>
-            <img src={Trevor} alt="Profile" style={{borderRadius: "50%" }} />
-            <span className={styles.landingTitle}>Trevor Gerald<br/></span>
+            <img src={Trevor} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+            <span className={styles.profileName}>Trevor Gerald<br/></span>
               <span className={styles.missionItemDescription}>Vice President</span>
             </div>
             <div className={styles.missionItemContainer}>
-            <img src={Pratham} alt="Profile" style={{borderRadius: "50%" }} />
-            <span className={styles.landingTitle}>Pratham Kancherla<br/></span>
+            <img src={Pratham} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+            <span className={styles.profileName}>Pratham Kancherla<br/></span>
               <span className={styles.missionItemDescription}>Vice President of Technology</span>
             </div>
           </div>
@@ -65,23 +68,47 @@ function Leadership() {
           <span className={styles.missionTitle}>Our Leadership</span>
           <div className={styles.missionItemsContainer}>
             <div className={styles.missionItemContainer}>
-            <img src={Andrew} alt="Profile" style={{borderRadius: "50%" }} />
-            <span className={styles.landingTitle}>Andrew Sheehan<br/></span>
+            <img src={Andrew} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+              <span className={styles.profileName}>Andrew Shaheen<br/></span>
               <span className={styles.missionItemDescription}>Vice President of Finance</span>
             </div>
             <div className={styles.missionItemContainer}>
-            <img src={Kathir} alt="Profile" style={{borderRadius: "50%" }} />
-            <span className={styles.landingTitle}>Kathir Maari<br/></span>
-              <span className={styles.missionItemDescription}>Vice President of Marketing</span>
+            <img src={Ava} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+            <span className={styles.profileName}>Ava Kolesnikov<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Socials</span>
             </div>
             <div className={styles.missionItemContainer}>
-            <img src={Jen} alt="Profile" style={{borderRadius: "50%" }} />
-            <span className={styles.landingTitle}>Jen Hazlett<br/></span>
-              <span className={styles.missionItemDescription}>Vice President of Socials</span>
+            <img src={Jen} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+            <span className={styles.profileName}>Jen Hazlett<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Membership</span>
             </div>
           </div>
         </div>
       </div>
+
+      <div className={styles.scrollSubcontainer}>
+        <div className={styles.missionSubContainer}>
+          <span className={styles.missionTitle}>Our Leadership</span>
+          <div className={styles.missionItemsContainer}>
+            <div className={styles.missionItemContainer}>
+            <img src={Aryan} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+              <span className={styles.profileName}>Aryan Bommena<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Strategy</span>
+            </div>
+            <div className={styles.missionItemContainer}>
+            <img src={Alex} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+            <span className={styles.profileName}>Alex McNichols<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Community</span>
+            </div>
+            <div className={styles.missionItemContainer}>
+            <img src={Andrea} alt="Profile" style={{borderRadius: "50%", width: "270px", height: "270px"}}/>
+            <span className={styles.profileName}>Andrea Berkebile<br/></span>
+              <span className={styles.missionItemDescription}>Vice President of Marketing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <div className="marquee-contain">
         <div className="marquee-sub-contain">
