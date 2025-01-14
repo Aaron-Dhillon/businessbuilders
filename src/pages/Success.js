@@ -1,43 +1,34 @@
-// success.js (or a component in your React app)
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Success = () => {
-  const location = useLocation();
-  const [message, setMessage] = useState('Processing payment...');
-  
-  useEffect(() => {
-    // Get the session_id from the URL query parameters
-    const queryParams = new URLSearchParams(location.search);
-    const sessionId = queryParams.get('session_id');
-    
-    // Call your backend to verify the payment status
-    const verifyPayment = async () => {
-      try {
-        const response = await fetch(`http://localhost:3000/verify-payment?session_id=${sessionId}`);
-        const data = await response.json();
-        if (data.status === 'succeeded') {
-          setMessage('Payment successful! Thank you for your purchase.');
-        } else {
-          setMessage('Payment failed. Please try again.');
-        }
-      } catch (error) {
-        setMessage('There was an error verifying your payment.');
-      }
-    };
+  const navigate = useNavigate();
 
-    if (sessionId) {
-      verifyPayment();
-    } else {
-      setMessage('Session not found.');
-    }
-  }, [location]);
+  const handleContinue = () => {
+    // Redirect to home or other relevant page
+    navigate("/");
+  };
 
   return (
-    <div>
-      <h1>{message}</h1>
-      {/* Optionally, you can provide a link to the home page or another page */}
-      <a href="/">Go to Home</a>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Thank You for Your Payment!</h1>
+      <p>Your transaction was successful. We appreciate your support.</p>
+      <p>If you have any questions, feel free to contact our support team.</p>
+
+      <button
+        onClick={handleContinue}
+        style={{
+          padding: "10px 20px",
+          backgroundColor: "#4caf50",
+          color: "white",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          marginTop: "20px",
+        }}
+      >
+        Continue
+      </button>
     </div>
   );
 };
