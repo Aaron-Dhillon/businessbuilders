@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import "../App.css";
 import styles from "../assets/styles/Home.module.css";
 import Header from "../components/Header";
