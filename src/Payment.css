@@ -1,0 +1,67 @@
+.scrollSubcontainer {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .paymentDetailsContainer {
+    width: 100%;
+    max-width: 900px; /* Maximum width to keep it responsive */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .paymentFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 500px; /* Adjust max-width for better form alignment */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #bbb;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+  
+  .error, .success {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #d32f2f; /* red for error */
+    font-weight: 600;
+  }
+  
+  .success {
+    color: #388e3c; /* green for success */
+  }
+  

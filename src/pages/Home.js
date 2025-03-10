@@ -4,6 +4,12 @@ import Header from "../components/Header";
 import Marquee from "react-fast-marquee";
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/aboutus');
+  };
+
   return (
     <>
       {/* Header */}
