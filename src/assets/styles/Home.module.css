@@ -1,141 +1,232 @@
 /* Home Styles */
-.scrollContainer  {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+
+
+/* General */
+.sectionTitle  {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "JetBrains Bold";
+    border-radius: 5px;
+}
+.leftGuideLine  {
+    transform: rotateX(90deg);
+}
+.liveContainer  {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.liveIndicator  {
+    background-color: greenyellow;
+    margin-right: 7.5px;
+    padding: 5.1px;
+    border-radius: 50px;
+    position: relative;
+    animation: pulse 2s infinite;
+}
+.liveText  {
+    color: var(--white);
+    font-family: "JetBrains Bold";
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+/* Hero */
+.heroContainer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 60px);
+    height: 100vh;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 0 30px;
+}
+.heroContent  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 100%;
 }
-.header  {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    justify-content: space-between;
-    position: absolute;
-    width: calc(100% - 60px);
-    background-color: var(--background);
-    z-index: 999;
-}
-.headerLogo  {
-    width: 35px;
-    margin-right: 10px;
-}
-.headerIconLink  {
-    outline: none;
-    text-decoration: none;
-    color: var(--text-color);
-    transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
-}
-.headerIconLink:hover  {
-    opacity: 0.6;
-    transform: scaleX(1.1);
-    cursor: pointer;
-}
-.headerIcon  {
-    font-size: 30px;
-    transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
-}
-.headerLinkContainer  {
-    display: flex;
-    flex-direction: row;
-}
-.headerLink  {
-    text-transform: uppercase;
-    font-size: 15px;
-    margin: 0 10px;
-    font-weight: 900;
-    text-decoration: none;
-    color: var(--text-color);
-    outline: none;
-    transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
-}
-.headerLink:hover  {
-    opacity: 0.6;
-    transform: scaleX(1.05);
-}
-.scrollSubcontainer  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: calc(100%);
-    min-height: calc(100%);
-    scroll-snap-align: start;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scroll-snap-align: start;
-}
-.landingSubcontainer  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.landingYear, .missionTitle  {
+.heroYear  {
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px 10px;
-    background-color: var(--text-color);
-    color: var(--background);
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "JetBrains Bold";
+    border-radius: 5px;
 }
-.landingTitle  {
+.heroTitle  {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 80px;
     margin: 0px;
     padding: 0px;
     text-align: center;
+    line-height: 1;
 }
-.landingSubtitle  {
-    font-weight: 600;
+.heroSubtitle, .heroSubtitleTop  {
+    font-weight: 500;
     font-size: 25px;
     margin-top: 1em;
     text-align: center;
-    font-family: "Graphik Light";
-    width: 60%;
+    opacity: 0.5;
 }
-.landingIcon  {
+.heroSubtitle  {
+    margin-top: 0;
+}
+.heroIcon  {
     margin-bottom: 1em;
     animation: jiggle-icon 2s ease-in-out infinite;
     transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
 }
-.missionSubContainer  {
+
+/* Mission */
+.missionContainer  {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 100%;
+    align-items: start;
     justify-content: center;
+    /* height: 100vh; */
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 0 30px;
+    width: calc(100% - 60px);
 }
-.missionItemsContainer  {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.missionItemContainer  {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    justify-content: center;
-    align-items: center;
-}
-.missionItemImage  {
-    height: 10vh;
-    margin: 0 25px; 
-}
-.missionItemDescription  {
+.missionStatement, .missionStatementBold  {
+    font-weight: 500;
+    font-size: 30px;
     margin-top: 1em;
-    text-align: center;
-    font-family: "Graphik Regular";
+}
+.missionStatementBold  {
+    font-weight: 700;
+    margin-top: 0;
+}
+.missionGrid  {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    /* margin-bottom: 30px; */
+}
+.missionItem  {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+.missionNumber  {
+    font-weight: 700;
+    font-size: 40px;
+}
+.missionTitle  {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+.missionSubtitle  {
+    font-weight: 500;
+    opacity: 0.5;
+}
+.missionItem:first-child, .missionItem:nth-child(2), .missionItem:nth-child(3), .missionItem:nth-child(4)  {
+    border-left: 0;
+}
+.missionItem:last-child {
+    border-right: 0;
 }
 
+
+/* Initiatives */
+.initiativesContainer  {  
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* height: 100vh; */
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 0 30px;
+    width: calc(100% - 60px);
+}
+.initiativeItem  {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    position: relative;
+}
+.initiativeImg  {
+    border-radius: 10px;
+}
+.initiativeTitle  {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+.initiativeSubtitle  {
+    font-weight: 500;
+    opacity: 0.5;
+}
+.initiativeGrid  {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    /* margin-bottom: 30px; */
+}
+.initiativeItem:first-child, .initiativeItem:nth-child(2), .initiativeItem:nth-child(3), .initiativeItem:nth-child(4)  {
+    border-left: 0;
+}
+.initiativeItem:last-child {
+    border-right: 0;
+}
+
+/* Founders */
+.foundersContainer  {  
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    margin: 0 30px;
+    width: calc(100% - 60px);
+}
+
+/* Sitemap */
+.sitemapContainer  {
+    margin: 0 30px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: calc(100% - 116px);
+}
 
 /* Animations */
 @keyframes jiggle-icon {
     0% {
         transform: translateY(0px);
     }
-
     45% {
         transform: translateY(5px);
     }
@@ -146,25 +237,14 @@
         transform: translateY(5px);
     }
 }
-
-
-.marquee-contain  {
-    display: flex;
-    overflow: hidden;
-}
-.marquee-sub-contain  {
-    display: flex;
-    white-space: nowrap;
-    animation: infinite-scroll 15s linear infinite;
-    animation-play-state: running;
-    will-change: transform;
-}
-@keyframes infinite-scroll {
+@keyframes pulse {
     0% {
-        transform: translate3d(calc(0% * -1),0,0);
+        box-shadow: 0 0 0 0 rgba(172, 255, 47, 0.7);
     }
-
-    to {
-        transform: translate3d(calc(-100% - 0%),0,0);
+    70% {
+        box-shadow: 0 0 0 10px rgba(172, 255, 47, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(172, 255, 47, 0);
     }
 }

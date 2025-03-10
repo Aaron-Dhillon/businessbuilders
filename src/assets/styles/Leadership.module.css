@@ -1,0 +1,214 @@
+/* Leadership Styles */
+.scrollContainer  {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100%;
+}
+.header  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    position: absolute;
+    left: 10px;
+    right: 20px;
+    top: 10px;
+    border-radius: 7px;
+    background: rgba(226, 221, 214, 0.06);
+    box-shadow: 0 5px 10px rgba(75, 75, 75, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+.headerLogo  {
+    width: 25px;
+    margin-right: 10px;
+}
+.headerIconLink  {
+    outline: none;
+    text-decoration: none;
+    color: var(--black);
+    transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
+}
+.headerIconLink:hover  {
+    opacity: 0.6;
+    transform: scaleX(1.1);
+    cursor: pointer;
+}
+.headerIcon  {
+    font-size: 25px;
+    transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
+}
+.headerLinkContainer  {
+    display: flex;
+    flex-direction: row;
+}
+.headerLink  {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0 10px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--black);
+    outline: none;
+    transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
+}
+.headerLink:hover  {
+    opacity: 0.6;
+    transform: scaleX(1.05);
+}
+.scrollSubcontainer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.landingSubcontainer  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landingTitle  {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 1;
+}
+.landingYear, .sectionTitle  {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "JetBrains Bold";
+    border-radius: 5px;
+}
+.landingIcon  {
+    margin-bottom: 1em;
+    animation: jiggle-icon 2s ease-in-out infinite;
+    transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
+}
+.sectionTitle  {
+    margin-bottom: 5em;
+}
+.leadershipHeadshot  {
+    border-radius: 0 25px 0 25px;
+}
+.leadershipName  {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 1;
+    margin: 0.75em 0 0.25em 0;
+}
+.leadershipTitle  {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    font-family: "JetBrains Mono";
+    text-transform: uppercase;
+}
+.leadershipInfoContain  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.leadershipIcon  {
+    filter: brightness(0) saturate(100%) invert(2%) sepia(4%) saturate(5530%) hue-rotate(240deg) brightness(94%) contrast(90%);
+    transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
+}
+.leadershipIcon:hover  {
+    opacity: 0.75;
+    transform: translateX(2px);
+}
+.missionSubContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.missionItemsContainer  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.missionItemContainer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.missionItemTitleContainer  {
+    margin: 0 25px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.missionItemBoxConnect, .missionItemBoxEducate, .missionItemBoxInspire {
+    display: inline-flex;
+    flex-direction: row;
+    width: 3.5vw;
+    height: 3.5vw;
+    margin: 0 2px;
+    border-radius: 0px 5px 0px 5px;
+    background-color: var(--blue);
+}
+.missionItemBoxEducate  {
+    background-color: var(--yellow);
+}
+.missionItemBoxInspire  {
+    background-color: var(--red);
+}
+.missionItemTitle  {
+    font-family: "Polymath";
+    font-size: 5vw;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+.missionItemDescription  {
+    margin-top: 1em;
+    text-align: center;
+    font-family: "Graphik Regular";
+    color: var(--white);
+}
+
+/* Animations */
+@keyframes jiggle-icon {
+    0% {
+        transform: translateY(0px);
+    }
+    45% {
+        transform: translateY(5px);
+    }
+    60% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+}

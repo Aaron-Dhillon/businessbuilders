@@ -1,6 +1,6 @@
 import "../AppForm.css";
 import styles from "../assets/styles/Home.module.css";
-import Logo from "../assets/Business Builders Logo.png";
+import Logo from "../assets/images/Business Builders Logo.png";
 import Connect from "../assets/Connect.svg";
 import Educate from "../assets/Educate.svg";
 import Inspire from "../assets/Inspire.svg";

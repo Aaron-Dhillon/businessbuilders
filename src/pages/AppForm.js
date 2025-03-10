@@ -1,7 +1,7 @@
 import FormfacadeEmbed from "@formfacade/embed-react";
 import {Link} from 'react-router-dom';
 import styles from "../assets/styles/Home.module.css";
-import Logo from "../assets/Business Builders Logo.png";
+import Logo from "../assets/images/Business Builders Logo.png";
 
 function AppForm() {
   return (

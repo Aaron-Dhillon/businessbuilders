@@ -1,9 +1,8 @@
 import "../App.css";
-import styles from "../assets/styles/Home.module.css";
-import Logo from "../assets/Business Builders Logo.png";
-import Connect from "../assets/Connect.svg";
-import Educate from "../assets/Educate.svg";
-import Inspire from "../assets/Inspire.svg";
+import styles from "../assets/styles/Leadership.module.css";
+import Logo from "../assets/images/Business Builders Logo.png";
+import Rohan from "../assets/images/rohan.jpg";
+import LinkedIn from "../assets/images/linkedin.svg";
 import {Link} from 'react-router-dom';
 
 function Leadership() {
@@ -34,23 +33,17 @@ function Leadership() {
 
       <div className={styles.scrollSubcontainer}>
         <div className={styles.missionSubContainer}>
-          <span className={styles.missionTitle}>Our Mission</span>
+          <span className={styles.sectionTitle}>Executive</span>
           <div className={styles.missionItemsContainer}>
             <div className={styles.missionItemContainer}>
-              <span className={styles.landingTitle}>Rohan Suggala<br/></span>
-              <span className={styles.missionItemDescription}>President</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-            <span className={styles.landingTitle}>Trevor Gerald<br/></span>
-              <span className={styles.missionItemDescription}>Vice President of Technology.</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-            <span className={styles.landingTitle}>Pratham Kancherla<br/></span>
-              <span className={styles.missionItemDescription}>Vice President of Membership and Socials</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-            <span className={styles.landingTitle}>Henry Guerrera<br/></span>
-              <span className={styles.missionItemDescription}>Vice President of Finance</span>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Rohan Suggala<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -58,46 +51,136 @@ function Leadership() {
 
       <div className={styles.scrollSubcontainer}>
         <div className={styles.missionSubContainer}>
-          <span className={styles.missionTitle}>Our Mission</span>
+          <span className={styles.sectionTitle}>Technology</span>
           <div className={styles.missionItemsContainer}>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Connect} alt="Business Builders - Connect Pillar"></img>
-              <span className={styles.missionItemDescription}>Build a community of innovators, problem-solvers, and doers with relationships that will last a lifetime.</span>
+          <div className={styles.missionItemContainer}>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Trevor Gerald<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
             </div>
             <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Educate} alt="Business Builders - Educate Pillar"></img>
-              <span className={styles.missionItemDescription}>Provide members with the knowledge required to build a sustainable business, think creatively, and achieve career goals.</span>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Pratham Kancherla<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
             </div>
             <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Inspire} alt="Business Builders - Inspire Pillar"></img>
-              <span className={styles.missionItemDescription}>Inspire students to explore and realize new career heights and life possibilities that are within their reach.</span>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Kathir Maari<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
+            </div>
+            <div className={styles.missionItemContainer}>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Aaron Dhillon<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="marquee-contain">
-        <div className="marquee-sub-contain">
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-        </div>
-        <div className="marquee-sub-contain">
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
+      <div className={styles.scrollSubcontainer}>
+        <div className={styles.missionSubContainer}>
+          <span className={styles.sectionTitle}>Social</span>
+          <div className={styles.missionItemsContainer}>
+          <div className={styles.missionItemContainer}>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Jen Hazlett<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
+            </div>
+            <div className={styles.missionItemContainer}>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Ava Kolesnikov<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div className={styles.scrollSubcontainer}>
+        <div className={styles.missionSubContainer}>
+          <span className={styles.sectionTitle}>Finance</span>
+          <div className={styles.missionItemsContainer}>
+          <div className={styles.missionItemContainer}>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Andrew Shaheen<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
+            </div>
+            <div className={styles.missionItemContainer}>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Henry Guerrera<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.scrollSubcontainer}>
+        <div className={styles.missionSubContainer}>
+          <span className={styles.sectionTitle}>Events</span>
+          <div className={styles.missionItemsContainer}>
+          <div className={styles.missionItemContainer}>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Alex McNichols<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
+            </div>
+            <div className={styles.missionItemContainer}>
+              <img src={Rohan} className={styles.leadershipHeadshot} alt="Rohan Suggala - President"></img>
+              <span className={styles.leadershipName}>Aryan Bommena<br/></span>
+              <div className={styles.leadershipInfoContain}>
+                <span className={styles.leadershipTitle}>President</span>
+                <a href="https://www.linkedin.com/in/rohansuggala/" style={{margin: 0, padding: 0, width: "20px", height: "20px"}}>
+                  <img src={LinkedIn} className={styles.leadershipIcon} alt="LinkedIn"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }

@@ -1,80 +1,177 @@
 import "../App.css";
-import "../AppForm.css";
 import styles from "../assets/styles/Home.module.css";
-import Logo from "../assets/Business Builders Logo.png";
-import Connect from "../assets/Connect.svg";
-import Educate from "../assets/Educate.svg";
-import Inspire from "../assets/Inspire.svg";
-import {Link} from 'react-router-dom';
+import Header from "../components/Header";
+import Marquee from "react-fast-marquee";
 
 function Home() {
   return (
-    <div className={styles.scrollContainer}>
-      <div className={styles.header}>
-        <Link to= "/">
-          <img src={Logo} className={styles.headerLogo} alt="Business Builders Logo"></img>
-        </Link>
-        <div className={styles.headerLinkContainer}>
-          <Link className={styles.headerLink} to="/aboutus">About Us</Link>
-          <Link className={styles.headerLink} to="/leadership">Leadership</Link>
-          <Link className={styles.headerLink} to="/appform">Join Us</Link>
+    <>
+      {/* Header */}
+      <Header />
+
+      {/* Hero */}
+      <div className={styles.heroContainer}>
+        <div className={styles.heroContent}>
+          <span className={styles.heroYear}>Est. 2001</span>
+          <span className={styles.heroTitle}>
+            Business
+            <br />
+            Builders
+          </span>
+          <span className={styles.heroSubtitleTop}>
+            The premier entrepreneurship organization at
+          </span>
+          <span className={styles.heroSubtitle}>The Ohio State University</span>
         </div>
-        <a className={styles.headerIconLink} href="/">
-          <span class={`material-symbols-rounded ${styles.headerIcon}`}>hub</span>
-        </a>
+        <span className={`material-symbols-rounded ${styles.heroIcon}`}>
+          arrow_downward_alt
+        </span>
       </div>
 
-      <div className={styles.scrollSubcontainer}>
-        <div></div>
-        <div className={styles.landingSubcontainer}>
-          <span className={styles.landingYear}>Est. 2001</span>
-          <span className={styles.landingTitle}>Business<br/>Builders</span>
-          <span className={styles.landingSubtitle}>The premier entrepreneurship organization at The Ohio State University</span>
-        </div>
-        <span className={`material-symbols-rounded ${styles.landingIcon}`}>arrow_downward_alt</span>
-      </div>
+      {/* Mission */}
+      <div className={styles.missionContainer}>
+        <span
+          className={styles.sectionTitle}
+          style={{ marginTop: 30, marginLeft: 30 }}
+        >
+          Our Mission
+        </span>
+        <span className={styles.missionStatement} style={{ marginLeft: 30 }}>
+          We are on a mission to make Columbus an
+        </span>
+        <span
+          className={styles.missionStatementBold}
+          style={{ marginLeft: 30 }}
+        >
+          entrepreneurial destination.
+        </span>
+        <div className={styles.missionGrid}>
+          <div className={styles.missionItem}>
+            <span className={styles.missionNumber}>5K</span>
+            <span className={styles.missionTitle}>Initial Investment</span>
+            <span className={styles.missionSubtitle}>
+              To kickstart your venture.
+            </span>
+          </div>
 
-      <div className={styles.scrollSubcontainer}>
-        <div className={styles.missionSubContainer}>
-          <span className={styles.missionTitle}>Our Mission</span>
-          <div className={styles.missionItemsContainer}>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Connect} alt="Business Builders - Connect Pillar"></img>
-              <span className={styles.missionItemDescription}>Build a community of innovators, problem-solvers, and doers with relationships that will last a lifetime.</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Educate} alt="Business Builders - Educate Pillar"></img>
-              <span className={styles.missionItemDescription}>Provide members with the knowledge required to build a sustainable business, think creatively, and achieve career goals.</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Inspire} alt="Business Builders - Inspire Pillar"></img>
-              <span className={styles.missionItemDescription}>Inspire students to explore and realize new career heights and life possibilities that are within their reach.</span>
-            </div>
+          <div className={styles.missionItem}>
+            <span className={styles.missionNumber}>5K</span>
+            <span className={styles.missionTitle}>Initial Investment</span>
+            <span className={styles.missionSubtitle}>
+              To kickstart your venture.
+            </span>
+          </div>
+
+          <div className={styles.missionItem}>
+            <span className={styles.missionNumber}>5K</span>
+            <span className={styles.missionTitle}>Initial Investment</span>
+            <span className={styles.missionSubtitle}>
+              To kickstart your venture.
+            </span>
+          </div>
+
+          <div className={styles.missionItem}>
+            <span className={styles.missionNumber}>5K</span>
+            <span className={styles.missionTitle}>Initial Investment</span>
+            <span className={styles.missionSubtitle}>
+              To kickstart your venture.
+            </span>
           </div>
         </div>
       </div>
 
-      <div className="marquee-contain">
-        <div className="marquee-sub-contain">
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
-          <span className="landing-text">Business Builders</span>
+      {/* Initiatives */}
+      <div className={styles.initiativesContainer}>
+        <span
+          className={styles.sectionTitle}
+          style={{ marginTop: 30, marginLeft: 30 }}
+        >
+          Our Initiatives
+        </span>
+        <span className={styles.missionStatement} style={{ marginLeft: 30 }}>
+          Building the future of entrepreneurship through:
+        </span>
+
+        <div className={styles.initiativeGrid}>
+          <div className={styles.initiativeItem}>
+            <div className={styles.liveContainer}>
+              <div className={styles.liveIndicator}></div>
+              <span className={styles.liveText}>SP '25 is Live!</span>
+            </div>
+            <img
+              className={styles.initiativeNumber}
+              alt="Business Builders Logo"
+            ></img>
+            <span className={styles.initiativeTitle}>Product Studio</span>
+            <span className={styles.initiativeSubtitle}>
+              To kickstart your venture.
+            </span>
+          </div>
+
+          <div className={styles.initiativeItem}>
+            <img
+              className={styles.initiativeNumber}
+              alt="Business Builders Logo"
+            ></img>
+            <span className={styles.initiativeTitle}>Ship-It Sundays</span>
+            <span className={styles.initiativeSubtitle}>
+              To kickstart your venture.
+            </span>
+          </div>
+
+          <div className={styles.initiativeItem}>
+            <img
+              className={styles.initiativeNumber}
+              alt="Business Builders Logo"
+            ></img>
+            <span className={styles.initiativeTitle}>Initial Investment</span>
+            <span className={styles.initiativeSubtitle}>
+              To kickstart your venture.
+            </span>
+          </div>
+
+          <div className={styles.initiativeItem}>
+            <img
+              className={styles.initiativeNumber}
+              alt="Business Builders Logo"
+            ></img>
+            <span className={styles.initiativeTitle}>Initial Investment</span>
+            <span className={styles.initiativeSubtitle}>
+              To kickstart your venture.
+            </span>
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Founders */}
+      <div className={styles.foundersContainer}>
+        <Marquee>
+          <div className={styles.founderCard}>
+            <img />
+            <span>Name</span>
+            <span>Company</span>
+            <button>{"-->"}</button>
+          </div>
+          <div>
+            <img />
+            <span>Name</span>
+            <span>Company</span>
+            <button>{"-->"}</button>
+          </div>
+          <div>
+            <img />
+            <span>Name</span>
+            <span>Company</span>
+            <button>{"-->"}</button>
+          </div>
+        </Marquee>
+      </div>
+
+      {/* Testimonials */}
+
+      {/* Sitemap */}
+      <div className={styles.sitemapContainer}>site[map]</div>
+    </>
   );
 }
 

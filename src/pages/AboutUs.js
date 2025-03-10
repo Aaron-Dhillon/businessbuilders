@@ -1,9 +1,6 @@
 import "../App.css";
 import styles from "../assets/styles/Home.module.css";
-import Logo from "../assets/Business Builders Logo.png";
-import Connect from "../assets/Connect.svg";
-import Educate from "../assets/Educate.svg";
-import Inspire from "../assets/Inspire.svg";
+import Logo from "../assets/images/Business Builders Logo.png";
 import {Link} from 'react-router-dom';
 
 function AboutUs() {
@@ -46,26 +43,6 @@ function AboutUs() {
             <div className={styles.missionItemContainer}>
             <span className={styles.landingTitle}>Corporate Tours<br/></span>
               <span className={styles.missionItemDescription}>Visited corporate offices of companies such as Google, Lyft, Microsoft, Flashpoint Innovation, Societe Generale in cities such as San Francisco and Chicago.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.scrollSubcontainer}>
-        <div className={styles.missionSubContainer}>
-          <span className={styles.missionTitle}>Our Mission</span>
-          <div className={styles.missionItemsContainer}>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Connect} alt="Business Builders - Connect Pillar"></img>
-              <span className={styles.missionItemDescription}>Build a community of innovators, problem-solvers, and doers with relationships that will last a lifetime.</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Educate} alt="Business Builders - Educate Pillar"></img>
-              <span className={styles.missionItemDescription}>Provide members with the knowledge required to build a sustainable business, think creatively, and achieve career goals.</span>
-            </div>
-            <div className={styles.missionItemContainer}>
-              <img className={styles.missionItemImage} src={Inspire} alt="Business Builders - Inspire Pillar"></img>
-              <span className={styles.missionItemDescription}>Inspire students to explore and realize new career heights and life possibilities that are within their reach.</span>
             </div>
           </div>
         </div>

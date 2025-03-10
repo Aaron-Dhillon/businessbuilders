@@ -2,19 +2,33 @@
 
 @font-face {
   font-family: "Polymath";
-  src: url("./assets/POLYMATHVAR.TTF");
+  src: url("./assets/fonts/POLYMATHVAR.TTF");
 }
 @font-face {
   font-family: "Futura";
-  src: url("./assets/Futura\ Std\ Medium.ttf");
+  src: url("./assets/fonts/Futura\ Std\ Medium.ttf");
 }
 @font-face {
   font-family: "Graphik Regular";
-  src: url("./assets/Graphik-Regular-Cy-Gr-Web.ttf");
+  src: url("./assets/fonts/Graphik-Regular-Cy-Gr-Web.ttf");
 }
 @font-face {
   font-family: "Graphik Light";
-  src: url("./assets/Graphik-Light-Cy-Gr-Web.ttf");
+  src: url("./assets/fonts/Graphik-Light-Cy-Gr-Web.ttf");
+}
+@font-face {
+  font-family: "JetBrains Bold";
+  src: url("./assets/fonts/JETBRAINSMONO-BOLD.TTF");
+}
+:root  {
+  --black: #141115;
+  --white: #E2DDD6;
+  /* --gray: #6F6C69; */
+  /* --gray: #B3AEA8; */
+  --gray: #7A7A7A;
+  --blue: #1AC7E5;
+  --yellow: #F7E380;
+  --red: #FF3854;
 }
 *  {
   padding: 0;
@@ -22,14 +36,10 @@
 }
 html, body  {
   font-family: "Polymath";
-  color: #E2DDD6;
-  background-color: #141115;
+  color: var(--black);
+  background-color: var(--white);
   min-height: 100vh !important;
   height: 100%;
-}
-:root  {
-  --text-color: #E2DDD6;
-  --background: #141115;
 }
 #root, .App  {
   height: 100%;
@@ -41,12 +51,12 @@ html, body  {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: var(--white);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--text-color);
+  background: var(--black);
   transition: all 0.5s cubic-bezier(.075, .82, .165, 1);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(226, 221, 214, 0.5);
+  background-color: var(--gray);
 }
