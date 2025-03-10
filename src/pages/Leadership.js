@@ -10,6 +10,7 @@ import Ava from "../assets/ava.JPEG";
 import Aryan from "../assets/abommena.JPEG";
 import Andrea from "../assets/andrea.JPEG";
 import Alex from "../assets/amcnichols.jpg";
+import LinkedIn from "../assets/images/linkedin.svg"
 import { Link } from "react-router-dom";
 
 function Leadership() {
