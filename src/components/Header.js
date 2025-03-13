@@ -13,6 +13,7 @@ export default function Header() {
           <Link className={styles.headerLink} to="/">About Us</Link>
           <Link className={styles.headerLink} to="/">Leadership</Link>
           <Link className={styles.headerLink} to="/">Join Us</Link>
+          <Link className={styles.headerLink} to="/builders">Builders</Link>
         </div>
         <a className={styles.headerIconLink} href="/">
           <span className={`material-symbols-rounded ${styles.headerIcon}`}>hub</span>

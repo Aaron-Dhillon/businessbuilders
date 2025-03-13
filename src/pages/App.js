@@ -6,6 +6,7 @@ import AppForm from "./AppForm.js";
 import { HelmetProvider } from "react-helmet-async";
 import PaymentPage from "./PaymentPage.js";
 import Success from "./Success.js";
+import Builders from "./Builders.js";
 
 function App() {
   const helmetContext = {};
@@ -20,6 +21,7 @@ function App() {
           <Route path="/appform" element={<AppForm />} />
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/success" element={<Success />} />
+          <Route path="/builders" element={<Builders />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
