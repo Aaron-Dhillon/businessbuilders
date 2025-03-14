@@ -4,6 +4,25 @@ import Marquee from "react-fast-marquee";
 import styles from "../assets/styles/Builders.module.css";
 import Header from "../components/Header";
 
+const buildersData = [
+  {
+    founderName: "Kathir Maarikartheykeyan",
+    businessName: "Polymer",
+    imageUrl: "/images/founders/kathir.jpeg"
+  },
+  {
+    founderName: "Sarah Chen",
+    businessName: "EcoTech Solutions",
+    imageUrl: "/images/founders/sarah.jpg"
+  },
+  {
+    founderName: "Marcus Johnson",
+    businessName: "FinFlow",
+    imageUrl: "/images/founders/marcus.jpg"
+  }
+  // Add more builders as needed
+];
+
 function Builders() {
   return (
     <div className={styles.buildersPage}>
@@ -21,25 +40,22 @@ function Builders() {
           speed={40}
           pauseOnHover={true}
         >
-          {/* Placeholder cards - we can add real builder data here */}
-          <div className={styles.builderCard}>
-            <div className={styles.cardContent}>
-              <h3>Builder Name</h3>
-              <p>Company Name</p>
+          {buildersData.map((builder, index) => (
+            <div key={index} className={styles.builderCard}>
+              <div className={styles.cardContent}>
+                <img 
+                  src={builder.imageUrl} 
+                  alt={`${builder.founderName}`} 
+                  className={styles.founderImage}
+                  onError={(e) => {
+                    e.target.src = "/images/founders/placeholder.jpg";
+                  }}
+                />
+                <p className={styles.businessName}>{builder.businessName}</p>
+                <p className={styles.founderName}>{builder.founderName}</p>
+              </div>
             </div>
-          </div>
-          <div className={styles.builderCard}>
-            <div className={styles.cardContent}>
-              <h3>Builder Name</h3>
-              <p>Company Name</p>
-            </div>
-          </div>
-          <div className={styles.builderCard}>
-            <div className={styles.cardContent}>
-              <h3>Builder Name</h3>
-              <p>Company Name</p>
-            </div>
-          </div>
+          ))}
         </Marquee>
       </div>
     </div>
