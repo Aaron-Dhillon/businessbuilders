@@ -62,3 +62,58 @@
   color: #666;
   margin: 0;
 }
+
+.alumniSection,
+.cohortsSection {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: white;
+}
+
+.alumniSection h2,
+.cohortsSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a1a1a;
+}
+
+.alumniGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.cohortsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.cohortMarquee {
+  background: linear-gradient(to right, #f8f9fa, white, white, #f8f9fa);
+  padding: 2rem 0;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.cohortMessage {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cohortMessage span {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.cohortMessage span:nth-child(even) {
+  color: #666;
+  font-size: 1rem;
+}

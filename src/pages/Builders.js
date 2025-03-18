@@ -58,6 +58,35 @@ function Builders() {
           ))}
         </Marquee>
       </div>
+
+      <div className={styles.alumniSection}>
+        <h2>Past Alumni Success Stories</h2>
+        <div className={styles.alumniGrid}>
+          {/* Alumni success stories will be populated here */}
+        </div>
+      </div>
+
+      <div className={styles.cohortsSection}>
+        <h2>Past Cohorts</h2>
+        <div className={styles.cohortMarquee}>
+          <Marquee
+            gradient={false}
+            speed={40}
+            pauseOnHover={false}
+          >
+            <div className={styles.cohortMessage}>
+              <span>🚀 First Cohort In Progress 🚀</span>
+              <span>•</span>
+              <span>Making History</span>
+              <span>•</span>
+              <span>Building The Future</span>
+              <span>•</span>
+              <span>Stay Tuned For Success Stories</span>
+              <span>•</span>
+            </div>
+          </Marquee>
+        </div>
+      </div>
     </div>
   );
 }
