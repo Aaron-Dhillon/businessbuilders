@@ -8,17 +8,8 @@ const buildersData = [
   {
     founderName: "Kathir Maarikartheykeyan",
     businessName: "Polymer",
+    description: "Kathir is revolutionizing the world of music with his innovative Polymer platform.",
     imageUrl: "/images/founders/kathir.jpeg"
-  },
-  {
-    founderName: "Sarah Chen",
-    businessName: "EcoTech Solutions",
-    imageUrl: "/images/founders/sarah.jpg"
-  },
-  {
-    founderName: "Marcus Johnson",
-    businessName: "FinFlow",
-    imageUrl: "/images/founders/marcus.jpg"
   }
   // Add more builders as needed
 ];
@@ -42,7 +33,7 @@ function Builders() {
         >
           {buildersData.map((builder, index) => (
             <div key={index} className={styles.builderCard}>
-              <div className={styles.cardContent}>
+              <div className={styles.imageContainer}>
                 <img 
                   src={builder.imageUrl} 
                   alt={`${builder.founderName}`} 
@@ -51,8 +42,11 @@ function Builders() {
                     e.target.src = "/images/founders/placeholder.jpg";
                   }}
                 />
-                <p className={styles.businessName}>{builder.businessName}</p>
-                <p className={styles.founderName}>{builder.founderName}</p>
+                <div className={styles.category}>FOUNDER</div>
+              </div>
+              <div className={styles.cardContent}>
+                <h3 className={styles.businessName}>{builder.businessName}</h3>
+                <p className={styles.description}>{builder.description}</p>
               </div>
             </div>
           ))}
