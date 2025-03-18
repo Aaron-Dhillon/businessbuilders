@@ -56,7 +56,7 @@ function Builders() {
       <div className={styles.alumniSection}>
         <h2>Past Alumni Success Stories</h2>
         <div className={styles.alumniGrid}>
-          {/* Alumni success stories will be populated here */}
+          <div className={styles.comingSoon}>COMING SOON!</div>
         </div>
       </div>
 

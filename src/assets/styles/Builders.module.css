@@ -141,3 +141,29 @@
   color: #666;
   font-size: 1rem;
 }
+
+.comingSoon {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 3rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, white 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
